@@ -26,6 +26,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	//JSP 추가 시작
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'jakarta.servlet:jakarta.servlet-api' //스프링부트 3.0 이상
+	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'//스프링부트 3.0 이상
+	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
+	//JSP 추가 끝
 //	1. ntelliJ 무료 버전의 경우 해당 설정을 IntelliJ IDEA가 아니라 Gradle로 설정해야한다.
 //	War의 경우 톰캣이 정상 시작되지 않는 문제가 발생할 수 있습니다.
 //	2. 또는 `build.gradle`에 있는 다음 코드를 제거해도 됩니다.
